@@ -33,7 +33,7 @@ function updateAverage() {
     let sum = freelancers.reduce((sum, free) => sum + free.startingPrice, 0);
     // free= goes through each indv free // 
     let average = sum / freelancers.length;
-    //avg = Math.floor(avg * 100)/100;//
+    average = Math.floor(average * 100)/100;
     const averageDisplay = document.querySelector('#averagePrice');
     averageDisplay.innerText = average;
 }
